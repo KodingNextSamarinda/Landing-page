@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Rubik Mono One', monospace;
+    background-image: linear-gradient(to right bottom, #3500f4, #5d25f0, #763cec, #8a51e9, #9a64e5, #a266e1, #a868dc, #ae6ad8, #b15ad1, #b448c8, #b831be, #bb00b3);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header h1,
+.header h3 {
+    margin: 0;
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 30px;
+}
+
+.apps h3 {
+    font-family: "Zilla Slab Highlight", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header2 img {
+    width: 250px;
+    margin-top: -10%;
+}
+
+.header1 img {
+    width: 450px;
+}
+
+.search {
+    margin: 40px 0;
+}
+
+.search input {
+    width: 90%;
+    padding: 16px;
+    font-size: 15px;
+    align-items: center;
+    border-radius: 40px;
+    border: 2px dotted #ffffff;
+    background-color: rgba(253, 158, 255, 0.4);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search input:focus {
+    border-color: #ef00bb;
+}
+
+.apps {
+    padding: 20px;
+}
+
+.apps h3 {
+    margin-bottom: 70px;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.app-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.app {
+    text-align: center;
+}
+
+.app img {
+    width: 176px;
+    height: 194px;
+    transition: transform 0.3s;
+}
+
+.app img:hover {
+    transform: scale(1.09);
+}
+
+.app p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
